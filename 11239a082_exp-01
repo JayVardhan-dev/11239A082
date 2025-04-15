@@ -1,0 +1,138 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNhywdvHr9hNop+ko/tEW6H",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JayVardhan-dev/11239A082/blob/main/11239a082_exp-01\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "source": [
+        "def tower(n, source, aux, target):\n",
+        "    if n == 1:\n",
+        "        print(f\"move disk 1 from {source} to {target}\")  # Add space after 'from' and before 'to'\n",
+        "        return\n",
+        "    tower(n - 1, source, target, aux)\n",
+        "    print(f\"move disk {n} from {source} to {target}\")  # Add space after 'from' and before 'to'\n",
+        "    tower(n - 1, aux, source, target)\n",
+        "\n",
+        "# Change '_name_' to '__name__'\n",
+        "if __name__ == \"__main__\":\n",
+        "    n = int(input(\"enter a number\"))\n",
+        "    tower(n, 'a', 'b', 'c')"
+      ],
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nM-0EtCD0Jpe",
+        "outputId": "051fb8ed-78b2-4ec3-d81d-0b21c03059dd"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a number5\n",
+            "move disk 1 from a to c\n",
+            "move disk 2 from a to b\n",
+            "move disk 1 from c to b\n",
+            "move disk 3 from a to c\n",
+            "move disk 1 from b to a\n",
+            "move disk 2 from b to c\n",
+            "move disk 1 from a to c\n",
+            "move disk 4 from a to b\n",
+            "move disk 1 from c to b\n",
+            "move disk 2 from c to a\n",
+            "move disk 1 from b to a\n",
+            "move disk 3 from c to b\n",
+            "move disk 1 from a to c\n",
+            "move disk 2 from a to b\n",
+            "move disk 1 from c to b\n",
+            "move disk 5 from a to c\n",
+            "move disk 1 from b to a\n",
+            "move disk 2 from b to c\n",
+            "move disk 1 from a to c\n",
+            "move disk 3 from b to a\n",
+            "move disk 1 from c to b\n",
+            "move disk 2 from c to a\n",
+            "move disk 1 from b to a\n",
+            "move disk 4 from b to c\n",
+            "move disk 1 from a to c\n",
+            "move disk 2 from a to b\n",
+            "move disk 1 from c to b\n",
+            "move disk 3 from a to c\n",
+            "move disk 1 from b to a\n",
+            "move disk 2 from b to c\n",
+            "move disk 1 from a to c\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "jtjfZKqQ0tFa"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "zTzylf-b0uGo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "r4hK5azf0giA"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "_phlM_6F0oo2"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "7bCKPdKz0prv"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
